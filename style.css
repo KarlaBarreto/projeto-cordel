@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'PassionOne-Bold';
+    src: url('fontes-header/PassionOne-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Sriracha-Regular';
+    src: url('fonte-body/Sriracha-Regular.ttf'); 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;         
+}
+
+/* EU TINHA FEITO DESSA FORMA A CONFIGURAÇÃO DO BODY, SEM O HTML
+    body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}*/
+html, body {
+    min-height: 100vh; /*TAMANHO DA ALTURA MINIMO DO MEU HTML/SITE*/
+    background-color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header {         
+    background-color: black; 
+    
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps; /*DEIXA TODAS AS LETRAS MAISUCULAS POREM, COM DESTAQUE MAIOR PARA AS PRIMEIRAS LETRAS DAS PALAVRAS*/
+    font-family: 'PassionOne-Bold', 'Cursive';
+    font-size: 10vw; /*o vw (viewport width), adapta o tamanho da fonte basiado na largura da tela, 10vw ocupa 10% da tela em qualquer dimensão que ela esteja*/
+    color: white;
+    text-align: center;
+}
+
+h1:hover {
+    text-decoration: underline;
+    
+}
+
+header > p {
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*TINHA COLOCADO O padding: 90px 30px; PORÉM, NÃO ESTAVA DANDO O EFEITO RESPONSIVO DAS CAIXAS DE TEXTO*/
+section {    
+    padding-top: 10vh; /*vh - altura da tela*/
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-family: 'Sriracha-Regular', 'Cursive';
+    font-size: 4vw;
+    line-height: 2em; /*altura entre as linhas*/  
+
+}
+
+section.fundo-branco {
+    background-color: white;
+}
+
+section.imagem {
+    color: white;
+    background-size: cover; /*para a imagem preencher toda a caixa que ela foi inserida*/
+    background-attachment: fixed; /*para a imagem ficar fixa dentro da caixa*/
+    
+}
+
+section.imagem > p {  
+    display: inline-block; /*a caixa sombreada dentro da imagem se adapta aos tamanhos da minha tela com essa função*/
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black; /*sombra no texto*/
+      
+}
+
+section#imagem1 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;      
+  
+    
+}
+
+section#imagem2 {
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;  
+       
+    
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 15px;
+}
+
